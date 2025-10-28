@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+    #bg-canvas { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-1; opacity:0.4; }
+  </style>
+</head>
+<body class="bg-slate-950 text-gray-100">
+
+  <!-- Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navbar -->
+  <header class="fixed w-full bg-slate-950/80 backdrop-blur-sm z-50 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-cyan-400">MyPortfolio</h1>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#about" class="hover:text-cyan-400 transition">About</a>
+        <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+        <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
+        <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-24 relative z-10">
+    <!-- Hero -->
+    <section id="hero" class="h-screen flex flex-col items-center justify-center text-center px-4">
+      <img src="images/Picsart_25-05-01_22-50-06-659 1.jpg" class="rounded-full border-4 border-cyan-400 shadow-xl mb-6 object-cover h-48 w-48" alt="Profile">
+      <p class="text-lg text-gray-400 max-w-2xl">A passionate Frontend Developer & Designer focused on building beautiful, user-friendly experiences for the web.</p>
+      <div class="mt-6 space-x-4">
+        <a href="#projects" class="px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-full font-semibold">See Projects</a>
+        <a href="#contact" class="px-6 py-3 border border-cyan-600 hover:bg-cyan-600 hover:text-white rounded-full font-semibold">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 max-w-5xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-10">About Me</h3>
+      <p class="text-gray-300 text-center leading-relaxed"> Highly motivated and detail-oriented second-year B.Tech student at VIT Bhopal University with a strong passion for User Interface and User Experience design. Eager to apply foundational knowledge of design principles and problem-solving skills to contribute to real-world projects and gain practical experience in a UI/UX design internship. Seeking to leverage my creativity and technical skills to create intuitive and user-centered digital products..</p>
+    </section>
+
+    <!-- Skills -->
+    <!-- Skills -->
+<section id="skills" class="py-20 bg-slate-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Skills</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+      <div class="p-6 bg-slate-800 rounded-xl text-center hover:scale-105 transition">
+        <img src="https://placehold.co/64x64/E34F26/FFFFFF?text=HTML" class="mx-auto mb-2">
+        <p>HTML</p>
+      </div>
+      <div class="p-6 bg-slate-800 rounded-xl text-center hover:scale-105 transition">
+        <img src="https://placehold.co/64x64/1572B6/FFFFFF?text=CSS" class="mx-auto mb-2">
+        <p>CSS</p>
+      </div>
+      <div class="p-6 bg-slate-800 rounded-xl text-center hover:scale-105 transition">
+        <img src="https://placehold.co/64x64/F7DF1E/000000?text=JS" class="mx-auto mb-2">
+        <p>JavaScript</p>
+      </div>
+      <div class="p-6 bg-slate-800 rounded-xl text-center hover:scale-105 transition">
+        <img src="https://placehold.co/64x64/61DAFB/000000?text=React" class="mx-auto mb-2">
+        <p>React</p>
+      </div>
+      <div class="p-6 bg-slate-800 rounded-xl text-center hover:scale-105 transition">
+        <img src="https://placehold.co/64x64/563D7C/FFFFFF?text=Bootstrap" class="mx-auto mb-2">
+        <p>Bootstrap</p>
+      </div>
+      <div class="p-6 bg-slate-800 rounded-xl text-center hover:scale-105 transition">
+        <img src="https://placehold.co/64x64/00599C/FFFFFF?text=C%2B%2B" class="mx-auto mb-2">
+        <p>C++</p>
+      </div>
+      <div class="p-6 bg-slate-800 rounded-xl text-center hover:scale-105 transition">
+        <img src="https://placehold.co/64x64/F05032/FFFFFF?text=Git" class="mx-auto mb-2">
+        <p>Git</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-10">Projects</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-slate-800 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+          <img src="https://placehold.co/600x300/0f172a/ffffff?text=Project+1" class="w-full h-40 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2 text-cyan-400">Portfolio Website</h4>
+            <p class="text-sm text-gray-400 mb-4">A modern, responsive portfolio site showcasing my skills and projects.</p>
+            <a href="#" class="text-cyan-400 hover:underline text-sm">View Code</a>
+          </div>
+        </div>
+        <div class="bg-slate-800 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+          <img src="images/netflix.avif" class="w-full h-40 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2 text-cyan-400">E-commerce UI</h4>
+            <p class="text-sm text-gray-400 mb-4">A sleek UI concept for an online store with cart functionality.</p>
+            <a href="#" class="text-cyan-400 hover:underline text-sm">View Code</a>
+          </div>
+        </div>
+        <div class="bg-slate-800 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+          <img src="images/TETRIS.avif" class="w-full h-40 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2 text-cyan-400">Game UI</h4>
+            <p class="text-sm text-gray-400 mb-4">A fun browser game with custom UI built using JavaScript and Canvas.</p>
+            <a href="#" class="text-cyan-400 hover:underline text-sm">View Code</a>
+          </div>
+        </div>
+         <div class="bg-slate-800 rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+          <img src="images/twitter.webp" class="w-full h-40 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2 text-cyan-400">E-commerce UI</h4>
+            <p class="text-sm text-gray-400 mb-4">A sleek UI concept for an online store with cart functionality.</p>
+            <a href="#" class="text-cyan-400 hover:underline text-sm">View Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-20 bg-slate-900">
+      <div class="max-w-5xl mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-10">Experience</h3>
+        <div class="space-y-6">
+          <div class="bg-slate-800 p-6 rounded-xl shadow">
+            <h4 class="text-xl font-semibold text-cyan-400">Frontend Intern</h4>
+            <p class="text-gray-400 text-sm">Tech Startup · 2024</p>
+            <p class="mt-2 text-gray-300">Worked on improving the UI of a SaaS platform, collaborating with designers and backend engineers.</p>
+          </div>
+          <div class="bg-slate-800 p-6 rounded-xl shadow">
+            <h4 class="text-xl font-semibold text-cyan-400">Freelance Projects</h4>
+            <p class="text-gray-400 text-sm">2023 - Present</p>
+            <p class="mt-2 text-gray-300">Built multiple client websites and prototypes, focusing on responsive design and performance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 max-w-4xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-10">Contact Me</h3>
+      <div class="text-center">
+        <p class="mb-6 text-gray-300">Let's collaborate! Reach out via email or connect on social platforms.</p>
+        <div class="flex justify-center space-x-6">
+          <a href="mailto:alex@example.com" class="text-cyan-400 hover:text-cyan-300">Email</a>
+          <a href="https://linkedin.com" target="_blank" class="text-cyan-400 hover:text-cyan-300">LinkedIn</a>
+          <a href="https://github.com" target="_blank" class="text-cyan-400 hover:text-cyan-300">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-6 text-center text-gray-500 border-t border-slate-800">
+    <p>© 2025 Alex. All rights reserved.</p>
+  </footer>
+
+  <!-- Three.js Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    window.onload = () => {
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+      const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('bg-canvas'), alpha:true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+
+      const stars = [];
+      for(let i=0;i<400;i++){
+        const geo = new THREE.SphereGeometry(0.15, 8, 8);
+        const mat = new THREE.MeshBasicMaterial({ color: 0x00ffff });
+        const star = new THREE.Mesh(geo, mat);
+        star.position.x = (Math.random()-0.5)*200;
+        star.position.y = (Math.random()-0.5)*200;
+        star.position.z = -Math.random()*200;
+        scene.add(star);
+        stars.push(star);
+      }
+      camera.position.z = 5;
+
+      function animate(){
+        requestAnimationFrame(animate);
+        stars.forEach(star => {
+          star.position.z += 0.2; // move forward continuously
+          if (star.position.z > 5) {
+            star.position.z = -200;
+            star.position.x = (Math.random()-0.5)*200;
+            star.position.y = (Math.random()-0.5)*200;
+          }
+        });
+        renderer.render(scene, camera);
+      }
+      animate();
+
+      window.addEventListener('resize', ()=>{
+        camera.aspect = window.innerWidth/window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      });
+    };
+  </script>
+</body>
+</html>
